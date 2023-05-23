@@ -47,12 +47,12 @@
                     <div class="links__block">
                         <ul class="tellphone__numbers">
                             <li class="menu__item">
-                                <a href="" class="menu__link">8 800 333 43 89</a>
+                                <a href="" class="menu__number__link">8 800 333 43 89</a>
                                 <img src="images/arrowIcon.svg" alt="">
                                 <ul class="item__sub__menu">
-                                    <li class="sub__menu__item"><a class="sub-menu__link" href="">8 800 333 43 89</a></li>
-                                    <li class="sub__menu__item"><a class="sub-menu__link" href="">8 800 333 43 89</a></li>
-                                    <li class="sub__menu__item"><a class="sub-menu__link" href="">8 800 333 43 89</a></li>
+                                    <li class="sub__menu__item"><a class="sub-menu__number__link" href="">8 800 333 43 89</a></li>
+                                    <li class="sub__menu__item"><a class="sub-menu__number__link" href="">8 800 333 43 89</a></li>
+                                    <li class="sub__menu__item"><a class="sub-menu__number__link" href="">8 800 333 43 89</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -108,7 +108,7 @@
             
                         <div class="swiper-wrapper">
                       
-                          <div class="swiper-slide slide__item">
+                          <div class="swiper-slide slide__item slide-1">
                             <div class="text__block">
                                 <h3 class="slide__item__tittle">Производство пресс-форм и полимерных изделий</h3>
                                 <p>Изделия любой сложности по образцам, чертежам, рисункам, фотографиям</p>
@@ -118,7 +118,7 @@
                                 </div>
                             </div>
                           </div>
-                          <div class="swiper-slide slide__item">
+                          <div class="swiper-slide slide__item slide-2">
                             <div class="text__block">
                                 <h3 class="slide__item__tittle">Производство пресс-форм и полимерных изделий</h3>
                                 <p>Изделия любой сложности по образцам, чертежам, рисункам, фотографиям</p>
@@ -128,7 +128,7 @@
                                 </div>
                             </div>
                           </div>
-                          <div class="swiper-slide slide__item">
+                          <div class="swiper-slide slide__item slide-3">
                             <div class="text__block">
                                 <h3 class="slide__item__tittle">Производство пресс-форм и полимерных изделий</h3>
                                 <p>Изделия любой сложности по образцам, чертежам, рисункам, фотографиям</p>
@@ -138,7 +138,7 @@
                                 </div>
                             </div>
                           </div>
-                          <div class="swiper-slide slide__item">
+                          <div class="swiper-slide slide__item slide-4">
                             <div class="text__block">
                                 <h3 class="slide__item__tittle">Производство пресс-форм и полимерных изделий</h3>
                                 <p>Изделия любой сложности по образцам, чертежам, рисункам, фотографиям</p>
@@ -175,7 +175,7 @@
                         <button class="tab__button">Медицина и образование</button>
                         <button class="tab__button">Кафе, бары, рестораны</button>
                         <button class="tab__button">Строительство</button>
-                        <a class="more__link" href=""></a>
+                        <a class="more__link" href="">Смотреть все решения <img src="images/arrowIconBlue.svg" alt=""></a>
                     </div>
                     <div class="content__box">
                         <div class="content active">
@@ -478,13 +478,15 @@
             <section class="our__clients">
                 <div class="container">
                     <h3 class="section__h3__tittle">Наши клиенты</h3>
+                    <div class="arrow__button"><img src="images/Nextslide2.svg" alt=""></div>
                     <div class="tab__buttons">
-                        <button class="tab__button__item active">Нефтевая отрасль</button>
+                        <button class="tab__button__item active-tab">Нефтевая отрасль</button>
                         <button class="tab__button__item">Энергетическая отрасль</button>
                         <button class="tab__button__item">Машиностроительная отрасль</button>
+                        <a href="#" class="more__link">Смотреть все<img src="images/arrowIconBlue.svg" alt=""></a>
                     </div>
                     <div class="content__box">
-                        <div class="content__item active">
+                        <div class="content__item active-content">
                             <div class="item__column">
                                 <div class="column__item">
                                     <img src="images/Rostex.svg" alt="">
@@ -557,26 +559,81 @@
             </section>
             <section class="press__center">
                 <div class="container">
-                    <h3 class="section__h3__tittle">Пресс-центр</h3>
-                    <div class="section__column">
-                        <div class="column__item">
-                            <div class="item__img"><img src="images/PressCenterBlockImg1.png" alt=""></div>
-                            <div class="item__tittle">Показываем работу пресс-форм</div>
-                            <div class="news"><p>Новости</p><span>/</span><p>24 апреля 2023</p></div>
-                            <a href="" class="more__about__link">Подробнее</a>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <h3 class="section__h3__tittle">Пресс-центр</h3>
+                                <div class="section__column">
+                                    <div class="column__item">
+                                        <div class="item__img"><img src="images/PressCenterBlockImg1.png" alt=""></div>
+                                        <div class="item__tittle">Показываем работу пресс-форм</div>
+                                        <div class="news"><p>Новости</p><span>/</span><p>24 апреля 2023</p></div>
+                                        <a href="" class="more__about__link">Подробнее</a>
+                                    </div>
+                                    <div class="column__item">
+                                        <div class="item__img"><img src="images/PressCenterBlockImg2.png" alt=""></div>
+                                        <div class="item__tittle">Производство крепежа для унитаза</div>
+                                        <div class="news"><p>Новости</p><span>/</span><p>24 апреля 2023</p></div>
+                                        <a href="" class="more__about__link">Подробнее</a>
+                                    </div>
+                                    <div class="column__item">
+                                        <div class="item__img"><img src="images/PressCenterBlockImg3.png" alt=""></div>
+                                        <div class="item__tittle">Литьё для компании «Исток-Аудио»</div>
+                                        <div class="news"><p>Новости</p><span>/</span><p>24 апреля 2023</p></div>
+                                        <a href="" class="more__about__link">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <h3 class="section__h3__tittle">Пресс-центр</h3>
+                                <div class="section__column">
+                                    <div class="column__item">
+                                        <div class="item__img"><img src="images/PressCenterBlockImg1.png" alt=""></div>
+                                        <div class="item__tittle">Показываем работу пресс-форм</div>
+                                        <div class="news"><p>Новости</p><span>/</span><p>24 апреля 2023</p></div>
+                                        <a href="" class="more__about__link">Подробнее</a>
+                                    </div>
+                                    <div class="column__item">
+                                        <div class="item__img"><img src="images/PressCenterBlockImg2.png" alt=""></div>
+                                        <div class="item__tittle">Производство крепежа для унитаза</div>
+                                        <div class="news"><p>Новости</p><span>/</span><p>24 апреля 2023</p></div>
+                                        <a href="" class="more__about__link">Подробнее</a>
+                                    </div>
+                                    <div class="column__item">
+                                        <div class="item__img"><img src="images/PressCenterBlockImg3.png" alt=""></div>
+                                        <div class="item__tittle">Литьё для компании «Исток-Аудио»</div>
+                                        <div class="news"><p>Новости</p><span>/</span><p>24 апреля 2023</p></div>
+                                        <a href="" class="more__about__link">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <h3 class="section__h3__tittle">Пресс-центр</h3>
+                                <div class="section__column">
+                                    <div class="column__item">
+                                        <div class="item__img"><img src="images/PressCenterBlockImg1.png" alt=""></div>
+                                        <div class="item__tittle">Показываем работу пресс-форм</div>
+                                        <div class="news"><p>Новости</p><span>/</span><p>24 апреля 2023</p></div>
+                                        <a href="" class="more__about__link">Подробнее</a>
+                                    </div>
+                                    <div class="column__item">
+                                        <div class="item__img"><img src="images/PressCenterBlockImg2.png" alt=""></div>
+                                        <div class="item__tittle">Производство крепежа для унитаза</div>
+                                        <div class="news"><p>Новости</p><span>/</span><p>24 апреля 2023</p></div>
+                                        <a href="" class="more__about__link">Подробнее</a>
+                                    </div>
+                                    <div class="column__item">
+                                        <div class="item__img"><img src="images/PressCenterBlockImg3.png" alt=""></div>
+                                        <div class="item__tittle">Литьё для компании «Исток-Аудио»</div>
+                                        <div class="news"><p>Новости</p><span>/</span><p>24 апреля 2023</p></div>
+                                        <a href="" class="more__about__link">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="column__item">
-                            <div class="item__img"><img src="images/PressCenterBlockImg2.png" alt=""></div>
-                            <div class="item__tittle">Производство крепежа для унитаза</div>
-                            <div class="news"><p>Новости</p><span>/</span><p>24 апреля 2023</p></div>
-                            <a href="" class="more__about__link">Подробнее</a>
-                        </div>
-                        <div class="column__item">
-                            <div class="item__img"><img src="images/PressCenterBlockImg3.png" alt=""></div>
-                            <div class="item__tittle">Литьё для компании «Исток-Аудио»</div>
-                            <div class="news"><p>Новости</p><span>/</span><p>24 апреля 2023</p></div>
-                            <a href="" class="more__about__link">Подробнее</a>
-                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"><img src="images/PreviousSlide2.svg" alt=""></div>
+                        <div class="swiper-button-next"><img src="images/Nextslide2.svg" alt=""></div>
                     </div>
                 </div>
             </section>
@@ -585,12 +642,17 @@
            
         </main>
         <footer class="footer">
-            <div class="container">
-                <div class="footer__top">
+            
+            <div class="footer__top">
+                <div class="container">
                     <img class="footer__logo" src="images/WebsiteFooterLogo.svg" alt="">
                     <a href="#" class="footer__arrow__link"><img src="images/arrowIconWhite.svg" alt=""></a>
+                   
                 </div>
-                <div class="footer__column">
+            </div>
+
+            <div class="footer__middle">
+                <div class="container">
                     <ul class="footer__menu">
                         <li class="menu__tittle__item"><a class="menu__tittle__link" href="">О компании</a></li>
                         <li class="menu__item"><a class="menu__link" href="">Руководство и сотрудники</a></li>
@@ -611,7 +673,7 @@
                     </ul>
                     <ul class="footer__menu">
                         <li class="menu__item"><a class="menu__tittle__link" href="">Контакты</a></li>
-                        <li class="menu__item">
+                        <li class="menu__item number__item">
                             <a class="menu__tittle__link" href="">8 800 333 43 89 <img src="images/arrowMiniIconWhite.svg" alt=""></a>
                             <ul class="item__sub__menu">
                                 <li class="sub__menu__item"><a class="sub-menu__link" href="">8 800 333 43 89</a></li>
@@ -630,9 +692,11 @@
                             <a href=""><img src="images/Odnoklassniki.svg" alt=""></a>
                         </div>
                     </ul>
-                    
                 </div>
-                <div class="footer__bottom">
+                
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
                     <a class="rotosnab" href="">© 2023 Ротоснаб</a>
                     <div class="links">
                         <a href="">Конфиденциальность</a>
@@ -640,6 +704,7 @@
                     </div>
                 </div>
             </div>
+        
         </footer>
     </div>
 
