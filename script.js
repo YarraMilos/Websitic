@@ -46,18 +46,44 @@ console.log(allContent2)
 
 tabs2.forEach((tab, index) => {
   tab.addEventListener('click', (e)=> {
-    tabs2.forEach(tab => {tab.classList.remove('active')})
-    tab.classList.add('active')
-    allContent2.forEach(content =>{content.classList.remove('active')})
-    allContent2[index].classList.add('active')
+    tabs2.forEach(tab => {tab.classList.remove('active-tab')})
+    tab.classList.add('active-tab')
+    allContent2.forEach(content =>{content.classList.remove('active-content')})
+    allContent2[index].classList.add('active-content')
 
   })
 
 
 })
+const arrowButton = document.querySelector('.arrow__button')
+
+arrowButton.addEventListener('click', function(){
+  const CurrentTab = document.querySelector('.active-tab')
+  if (!tabs2[2].classList.contains('active-tab')) {
+    tabs2.forEach(tab => {tab.classList.remove('active-tab')})
+    CurrentTab.nextElementSibling.classList.add('active-tab')
+    
+  }
+  const CurrentContent = document.querySelector('.active-content')
+  
+  if (!allContent2[2].classList.contains('active-content')) {
+    allContent2.forEach(content =>{content.classList.remove('active-content')})
+    CurrentContent.nextElementSibling.classList.add('active-content')
+    
+  }
+  
+  
+})
+
+
+
+
+
+
+
+
 
 const tabs3 = document.querySelectorAll('.tab__item')
-
 
 tabs3.forEach((tab, index) => {
   tab.addEventListener('click', (e)=> {
